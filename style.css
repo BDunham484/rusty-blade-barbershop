@@ -259,21 +259,29 @@ padding-top: 6vh;
         align-items: center;
         justify-content: flex-end;
         flex-wrap: wrap;
-        padding-top: 15vh;
+        padding-top: 10vh;
         position: relative;
     }
 
     #services_list {
         position: absolute;
-        top: 22vh;
+        top: 15vh;
         left: 8vw;
         width: 37vw;
         height: auto;
     }
 
     #barber {
-        height: 75vh;
+        height: 100vh;
         width: auto;
+    }
+
+    #scissors {
+        width: 25vw;
+        height: auto;
+        position: absolute;
+        left: 13vw;
+        bottom: 10vh;
     }
 
     /* **********MERCHANDISE********** */
