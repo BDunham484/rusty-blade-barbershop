@@ -157,134 +157,7 @@ nav {
         
     }
 
-    /* **********HOME********** */
-
-    #home {
-min-height: 100vh;
-
-    }
-    /* **********ADDRESS********** */
-
-    #address {
-        height: 10vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 36px;
-        letter-spacing: 2px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
-    /* **********LOGO*********** */
-
-    #logo_section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 75vh;
-
-    }
-
-    #logo {
-padding-top: 6vh;
-    }
-
-    /* **********ABOUT********** */
-
-    #about {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    /* .section_divider {
-        display: flex;
-        justify-content: center;
-    } */
-
-    .section_divider_border {
-        border-bottom: 2px solid antiquewhite;
-        width: 85%;
-        padding-top: 15vh;
-
-    }
-
-    #about_body {
-        min-height: 100vh;
-        width: 75vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding-top: 15vh;
-    }
-
-    .about_images {
-        width: 30vw;
-        height: auto;
-    }
-
-    #about_text {
-        position: absolute;
-        width: 32vw;
-        height: auto;
-    }
-
-    #about_2 {
-        width: 50vw;
-        height: auto;
-        padding-top: 5vh;
-    }
-
-    /* **********SERVICES********** */
-
-    #services {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #services_body {
-        min-height: 100vh;
-        width: 75vw;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        padding-top: 10vh;
-        position: relative;
-    }
-
-    #services_list {
-        position: absolute;
-        top: 15vh;
-        left: 8vw;
-        width: 37vw;
-        height: auto;
-    }
-
-    #barber {
-        height: 100vh;
-        width: auto;
-    }
-
-    #scissors {
-        width: 25vw;
-        height: auto;
-        position: absolute;
-        left: 13vw;
-        bottom: 4vh;
-    }
-
-    /* **********MERCHANDISE********** */
+/* ************MERCHANDISE********** */
 
     #merchandise {
         min-height: 100vh;
@@ -295,55 +168,142 @@ padding-top: 6vh;
         flex-wrap: wrap;
     }
 
-    #merch_list {
-        padding-top: 5vh;
+    .section_divider_border {
+        border-bottom: 2px solid antiquewhite;
+        width: 85%;
+        padding-top: 15vh;
+
+    }
+
+    #nav_buttons {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        width: 85vw;
     }
 
-    #merch_list li {
-        padding: 2vh 2vw 2vh 0vw;
-    }
 
-    .merch_images {
-        width: 27vw;
-        height: auto;
-    }
 
-    /* **********PRODUCTS********** */
+    /* **********ITEM DETAILS********** */
 
-    #products {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+#itemdetails {
+	display: flex;
+}
 
-    /* **********PRESS********** */
+.itemimages {
+    padding-right: 8vw;
+    margin-left: 50vw;
+}
 
-    #press {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
+.itemimages li img {
+	width: 40vw;
+	height: auto;
+	padding-bottom: 5vh;
+}
 
-    /* **********CONTACT********** */
+.itemdescription {
+	padding-left: 11vw;
+	width: 43vw;
+	position: fixed;
+	/* margin-right: 50vw; */
+	color: #e2c41d;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	
+}
 
-    #contact {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    
+.itemdescription ul {
+	list-style: none;
+}
 
-   
-    
-    
-      
+.title {
+	color: antiquewhite;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	padding-bottom: 8vh;
+	text-align: center;
+	
+}
+
+#availability {
+	padding-bottom: 3vh;
+}
+
+.itemprice {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	/* padding-left: 1vw; */
+	padding-bottom: 4vh;
+}
+
+.light_text {
+    color: antiquewhite;
+}
+
+.sizes {
+	display: flex;
+	list-style: none;
+	
+}
+
+.sizes input {
+	display: none;
+}
+
+.sizes li label {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px;
+	text-align: center;
+	border: 1px solid antiquewhite;
+	line-height: 50px;
+	cursor: pointer
+  }
+  
+.sizes li {
+	padding-left: 10px;
+}
+
+
+
+#quantity {
+	margin-top: 1vh;
+}
+
+#extrasmall:checked ~ label[for="extrasmall"],
+#small:checked ~ label[for="small"],
+#medium:checked ~ label[for="medium"],
+#large:checked ~ label[for="large"],
+#extralarge:checked ~ label[for="extralarge"],
+#xxl:checked ~ label[for="xxl"], 
+#xxxl:checked ~ label[for="xxxl"], 
+#xxxxl:checked ~ label[for="xxxxl"], 
+#xxxxxl:checked ~ label[for="xxxxxxl"] {
+  background: #999;
+  color: #fff;
+}
+
+.description {
+	font-family: 'Montserrat', sans-serif;
+	/* padding-left: 1vw; */
+	font-size: 20px;
+}
+
+.addtocart {
+    width: 150px;
+    height: 70px;
+    background-color: #e2c41d;
+    margin-right: 1px;
+    margin-top: 5vh;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: 2px solid antiquewhite;
+	
+}
+
+.addtocart a {
+	text-decoration: none;
+	color: #383737;
+}
+
