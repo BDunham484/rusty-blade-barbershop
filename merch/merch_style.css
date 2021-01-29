@@ -205,7 +205,7 @@ nav {
 	width: 43vw;
 	position: fixed;
 	/* margin-right: 50vw; */
-	color: #e2c41d;
+	color:  #d3b42a;
 	list-style: none;
 	font-family: 'Montserrat', sans-serif;
 	
@@ -293,18 +293,22 @@ nav {
 .addtocart {
     width: 150px;
     height: 70px;
-    background-color: #e2c41d;
+    background-color: #000000;
     margin-right: 1px;
     margin-top: 5vh;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    border: 2px solid antiquewhite;
-	
+    border: 2px solid #d3b42a;
+	text-decoration: none;
+	color: antiquewhite;
 }
 
-.addtocart a {
-	text-decoration: none;
-	color: #383737;
+.addtocart:hover {
+    cursor: pointer;
+    background-color: #d3b42a;
+    color: #000000;
 }
+
+
 

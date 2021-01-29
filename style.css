@@ -320,6 +320,24 @@ padding-top: 6vh;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #product_list {
+        padding-top: 5vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 85vw;
+    }
+
+    #product_list li {
+        padding: 2vh 2vw 2vh 0vw;
+    }
+
+    .product_images {
+        width: 27vw;
+        height: auto;
     }
 
     /* **********PRESS********** */
@@ -330,6 +348,7 @@ padding-top: 6vh;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     /* **********CONTACT********** */
@@ -340,6 +359,7 @@ padding-top: 6vh;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
     }
     
 
