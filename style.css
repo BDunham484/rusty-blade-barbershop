@@ -440,11 +440,16 @@ padding-top: 6vh;
         background-color: #d3b42a;
     }
 
+    #press_text_container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     #press_text {
-        top: 0;
-        left: 0;
         color: #000000 !important;
         font-size: 30px;
+        
     }
 
     #press_photo {
