@@ -15,7 +15,7 @@ body {
 
 a {
     text-decoration-line: none;
-    color: #d3b42a;
+    /* color: #d3b42a; */
 }
 
 /* **********NAVBAR********** */
@@ -55,6 +55,7 @@ nav {
 
     .nav-links li {
         list-style: none;
+        
     }
 
     .nav-links a:hover {
@@ -62,7 +63,7 @@ nav {
     }
 
     .nav-links a {
-        
+        color: #d3a631;
         letter-spacing: 3px;
         font-weight: bold;      
     }
@@ -75,7 +76,7 @@ nav {
     .burger div{
         width: 30px;
         height: 2px;
-        background-color:  #d3b42a;
+        background-color: #d3a631;
         margin: 5px;
         transition: all 0.3s ease;
     }
@@ -434,22 +435,32 @@ padding-top: 6vh;
     #press_link {
         position: absolute;
         top: 15vh;
-        left: 38vw;
+        left: 41vw;
         width: 37vw;
         height: 50vh;
-        background-color: #d3b42a;
+        background-color: #d3a631;
     }
 
     #press_text_container {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+        width: 37vw;
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    #press_header {
+        color: #000000 !important;
+        font-size: 30px;
+        padding-left: 7vw;
     }
 
     #press_text {
-        color: #000000 !important;
-        font-size: 30px;
-        
+        font-size: 21px;
+        padding-left: 7vw;
+        padding-top: 2vh;
+        padding-right: 7vw;
     }
 
     #press_photo {
@@ -461,8 +472,14 @@ padding-top: 6vh;
         width: 17vw;
         height: auto;
         position: absolute;
-        right: 7vw;
-        bottom: 0vh;
+        right: 6vw;
+        bottom: 3vh;
+    }
+
+    figcaption {
+        font-size: 18px;
+        padding-left: 7vw;
+        padding-top: 2vh;
     }
 
     /* **********CONTACT********** */
@@ -471,7 +488,7 @@ padding-top: 6vh;
         min-height: 100vh;
         width: 100%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -479,6 +496,51 @@ padding-top: 6vh;
     #map {
         width: 50vw;
         height: auto;
+    }
+
+    #contact_info {
+        width: 50vw;
+        height: 30vh;
+        background-color: #202020;
+        color: antiquewhite;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #d3a631;
+        padding-top: 2vh;
+    }
+
+    .contact_columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 11vw;
+        list-style: none;
+    }
+
+    .contact_divider_border {
+        border-bottom: 2px solid antiquewhite;
+        width: 11vw;
+        padding-top: 10px;
+    }
+
+    .contact_lists {
+        font-weight: normal;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .hours {
+        color: white;
+    }
+
+    input {
+        margin-top: 1vh;
     }
     
 
