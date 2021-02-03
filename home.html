@@ -12,7 +12,7 @@
     <main>
         <header>
             <!-- **********NAVBAR********** -->
-            <nav>
+            <nav id="nav_desktop">
                 <ul class="nav-links">
                     <li>
                         <a href="#home">Home</a>
@@ -24,7 +24,7 @@
                         <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#book_now">Book Now</a>
+                        <a href="https://www.booker.com">Book Now</a>
                     </li>
                     <li>
                         <a href="#merchandise">Merchandise</a>
@@ -33,7 +33,7 @@
                         <a href="#products">Products</a>
                     </li>
                     <li>
-                        <a href="#gift_cards">Gift Cards</a>
+                        <a href="https://www.booker.com">Gift Cards</a>
                     </li>
                     <li>
                         <a href="#press">Press</a>
@@ -48,6 +48,54 @@
                     <div class="line3"></div>
                 </div>
             </nav>
+            
+                <nav id="nav_min_top">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="https://www.booker.com">Book Now</a>
+                        </li>
+                    </ul>
+                    <!-- <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div> -->
+                </nav>
+                <nav id="nav_min_bottom">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#merchandise">Merchandise</a>
+                        </li>
+                        <li>
+                            <a href="#products">Products</a>
+                        </li>
+                        <li>
+                            <a href="https://www.booker.com">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="#press">Press</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>                      
+                    </ul>
+                    <!-- <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div> -->
+                </nav>
+            
+            
         </header>
         <!-- **********HOME********** -->
         <section id="home">
@@ -74,6 +122,19 @@
                 <img id="about_2" src="./images/about-2.webp" alt="A row of high end barber chairs">
 
             </section>
+            <section id="about_body_min">
+                <ul>
+                    <li>
+                        <img id="about_2" src="./images/about-2.webp" alt="A row of high end barber chairs">
+                    </li>
+                    <li>
+                        <img id="about_text" src="./images/about-text.webp" alt="Text about the barbershop">
+                    </li>
+                    <li>
+                        <img class="about_images" src="./images/about-3.webp" alt="Client waiting area">
+                    </li>
+                </ul>
+            </section>
         </section>
         <!-- **********SERVICES********** -->
         <section id="services">
@@ -84,6 +145,19 @@
 
                 <img id="services_list" src="./images/services.webp" alt="list of services">
 
+            </section>
+            <section id="services_body_min">
+                <ul>
+                    <li>
+                        <img id="services_list" src="./images/services.webp" alt="list of services">
+                    </li>
+                    <li>
+                        <img id="barber" src="./images/barber-4.webp" alt="barber shaving client">
+                    </li>
+                    <li>
+                        <img id="scissors" src="./images/scissors.webp" alt="a pair of scissors">
+                    </li>
+                </ul>
             </section>
         </section>
 
@@ -225,6 +299,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.9349100302406!2d-97.71088844900656!3d30.32436921215943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4e46eeb309397dc!2sMY%20SALON%20Suite%20of%20North%20Austin!5e0!3m2!1sen!2sus!4v1590183976372!5m2!1sen!2sus" 
                     width="100%" height="330" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
+            </section>    
                 <div>
                     <ul id="contact_info">
                         <li>
@@ -290,18 +365,22 @@
                                     <div class="contact_divider_border"></div>
                                 </li>
                                 <li class="contact_lists hours" >
-                                    <label for="email">Join Our Mailing List</label>
+                                    <form action="/submit">
+                                        <label for="email">Join Our Mailing List</label>
 
-                                    <input type="email" id="email"
-                                        placeholder="email address" size="30" required>
-                                </li>
+                                        <input type="email" id="email"
+                                            placeholder="email address" size="30" required>
+                                            <button>Submit</button>
+                                    </form>    
+                                </li>                            
                             </ul>
                         </li>
                     </ul>
                 </div>
-            </section>
-
         </section>
+        <footer>
+            © 2020 rusty-blade-barbershop.com
+        </footer>
     </main>
 
     <script src="script.js"></script>
