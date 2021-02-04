@@ -608,6 +608,7 @@ padding-top: 6vh;
 
 
     /* **********MEDIA QUERIES********** */
+    /* **********HOME SECTION********** */
 
     @media screen and (max-width: 1400px) {
         #nav_desktop {
@@ -642,6 +643,22 @@ padding-top: 6vh;
             display: flex;
         }
     }
+
+    @media screen and (max-width: 775px) {
+        #logo {
+            max-width: 90vw;
+            height: auto;
+            padding-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        #address {
+            font-size: 22px;
+        }
+    }
+
+
 
     /* **********ABOUT SECTION********** */
    
@@ -847,6 +864,24 @@ padding-top: 6vh;
             align-items: center;
         }
 
+    }
+
+    @media screen and (max-width: 500px) {
+        #press_photo {
+            width: 90vw;
+        }
+
+        #blade {
+            width: 35vw;
+        }
+
+        #press_link {
+            width: 90vw;
+        }
+
+        #press_text_container {
+            width: 90vw;
+        }
     }
 
 
