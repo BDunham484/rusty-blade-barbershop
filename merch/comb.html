@@ -12,7 +12,7 @@
     <main>
         <header>
             <!-- **********NAVBAR********** -->
-            <nav>
+            <nav id="nav_desktop">
                 <ul class="nav-links">
                     <li>
                         <a href="../home.html">Home</a>
@@ -24,7 +24,7 @@
                         <a href="../home.html#services">Services</a>
                     </li>
                     <li>
-                        <a href="#">Book Now</a>
+                        <a href="https://www.booker.com">Book Now</a>
                     </li>
                     <li>
                         <a href="../home.html#merchandise">Merchandise</a>
@@ -33,7 +33,7 @@
                         <a href="../home.html#products">Products</a>
                     </li>
                     <li>
-                        <a href="#">Gift Cards</a>
+                        <a href="https://www.booker.com">Gift Cards</a>
                     </li>
                     <li>
                         <a href="../home.html#press">Press</a>
@@ -48,6 +48,42 @@
                     <div class="line3"></div>
                 </div>
             </nav>
+            
+                <nav id="nav_min_top">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="../home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../home.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="../home.html#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="https://www.booker.com">Book Now</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="nav_min_bottom">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="../home.html#merchandise">Merchandise</a>
+                        </li>
+                        <li>
+                            <a href="../home.html#products">Products</a>
+                        </li>
+                        <li>
+                            <a href="https://www.booker.com">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="../home.html#press">Press</a>
+                        </li>
+                        <li>
+                            <a href="../home.html#contact">Contact</a>
+                        </li>                      
+                    </ul>
+                </nav>
         </header>
         <section id="merchandise">
             <div class="section_divider_border"></div>
@@ -62,35 +98,51 @@
                 <li class="itemdescription">
                     <ul>
                         <li>
+                            <ul>
+                                <li>
+                                    <div id="nav_buttons_min">
+                                        <a href="../merch/hoodie.html">
+                                            &larr;Previous&nbsp;
+                                        </a>
+                                        <a href="../merch/patch.html">
+                                            &nbsp; Next&rarr;
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             <div class="title">
                                 Rusty Blade Mustache Comb
                             </div>
                         </li>
                         <li>
-                            <div id="availability">
-                                Availability: <span class="light_text">In Stock</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="itemprice">
-                                $10.00
-                            </div>
-                        </li>
-                        <li>
-                            Size: <span class="light_text">One size fits all</span>
-                        </li>
-                        
-                        </li>
-                        <li>
-                            <p>Quantity:</p>
-                            <label for="quantity"></label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="20">
-                        </li>
-                        <li>
-                            <a id="add_button" href="https://www.orbit-watches.com">              
-                                <button class="addtocart"><strong>Add To Cart</strong></button>     
-                            </a>    
-                        </li>
+                            <ul id="item_text">
+                                <li>
+                                    <div id="availability">
+                                        Availability: <span class="light_text">In Stock</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itemprice">
+                                        $10.00
+                                    </div>
+                                </li>
+                                <li>
+                                    Size: <span class="light_text">One size fits all</span>
+                                </li>                           
+                                <li>
+                                    <p>Quantity:</p>
+                                    <label for="quantity"></label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="20">
+                                </li>
+                                <li>
+                                    <a id="add_button" href="https://www.orbit-watches.com">              
+                                            <button class="addtocart"><strong>Add To Cart</strong></button>     
+                                    </a>    
+                                </li>
+                            </ul>
+                        </li>                      
                     </ul>
                 </li>
             </ul>
@@ -106,5 +158,7 @@
     </main>
     <script src="../script.js"></script>
 </body>
+
+
 
 </html>

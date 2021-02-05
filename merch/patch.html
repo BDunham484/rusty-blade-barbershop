@@ -11,8 +11,45 @@
 <body>
     <main>
         <header>
-            <!-- **********NAVBAR********** -->
-            <nav>
+           <!-- **********NAVBAR********** -->
+           <nav id="nav_desktop">
+            <ul class="nav-links">
+                <li>
+                    <a href="../home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../home.html#about">About</a>
+                </li>
+                <li>
+                    <a href="../home.html#services">Services</a>
+                </li>
+                <li>
+                    <a href="https://www.booker.com">Book Now</a>
+                </li>
+                <li>
+                    <a href="../home.html#merchandise">Merchandise</a>
+                </li>
+                <li>
+                    <a href="../home.html#products">Products</a>
+                </li>
+                <li>
+                    <a href="https://www.booker.com">Gift Cards</a>
+                </li>
+                <li>
+                    <a href="../home.html#press">Press</a>
+                </li>
+                <li>
+                    <a href="../home.html#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        
+            <nav id="nav_min_top">
                 <ul class="nav-links">
                     <li>
                         <a href="../home.html">Home</a>
@@ -24,8 +61,12 @@
                         <a href="../home.html#services">Services</a>
                     </li>
                     <li>
-                        <a href="#">Book Now</a>
+                        <a href="https://www.booker.com">Book Now</a>
                     </li>
+                </ul>
+            </nav>
+            <nav id="nav_min_bottom">
+                <ul class="nav-links">
                     <li>
                         <a href="../home.html#merchandise">Merchandise</a>
                     </li>
@@ -33,20 +74,15 @@
                         <a href="../home.html#products">Products</a>
                     </li>
                     <li>
-                        <a href="#">Gift Cards</a>
+                        <a href="https://www.booker.com">Gift Cards</a>
                     </li>
                     <li>
                         <a href="../home.html#press">Press</a>
                     </li>
                     <li>
                         <a href="../home.html#contact">Contact</a>
-                    </li>
+                    </li>                      
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
             </nav>
         </header>
         <section id="merchandise">
@@ -62,74 +98,51 @@
                 <li class="itemdescription">
                     <ul>
                         <li>
+                            <ul>
+                                <li>
+                                    <div id="nav_buttons_min">
+                                        <a href="../merch/comb.html">
+                                            &larr;Previous&nbsp;
+                                        </a>
+                                        <a href="../merch/hat.html">
+                                            &nbsp; Next&rarr;
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             <div class="title">
                                 Rusty Blade Embroidered Patch
                             </div>
                         </li>
                         <li>
-                            <div id="availability">
-                                Availability: <span class="light_text">In Stock</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="itemprice">
-                                $5.00
-                            </div>
-                        </li>
-                        <li>
-                            Size: <span class="light_text">One size fits all</span>
-                        </li>
-                        <!-- <li>
-                            <ul class="sizes">
+                            <ul id="item_text">
                                 <li>
-                                    <label for="extrasmall">XS</label>
-                                    <input type="radio" name="shirt size - extra small" id="extrasmall" checked />
+                                    <div id="availability">
+                                        Availability: <span class="light_text">In Stock</span>
+                                    </div>
                                 </li>
                                 <li>
-                                    <label for="small">S</label>
-                                    <input type="radio" name="shirt size - small" id="small" />
+                                    <div class="itemprice">
+                                        $5.00
+                                    </div>
                                 </li>
                                 <li>
-                                    <label for="medium">M</label>
-                                    <input type="radio" name="shirt size - medium" id="medium" />
+                                    Size: <span class="light_text">One size fits all</span>
+                                </li>                           
+                                <li>
+                                    <p>Quantity:</p>
+                                    <label for="quantity"></label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="20">
                                 </li>
                                 <li>
-                                    <label for="large">L</label>
-                                    <input type="radio" name="shirt size - large" id="large" />
+                                    <a id="add_button" href="https://www.orbit-watches.com">              
+                                            <button class="addtocart"><strong>Add To Cart</strong></button>     
+                                    </a>    
                                 </li>
-                                <li>
-                                    <label for="extralarge">XL</label>
-                                    <input type="radio" name="shirt size - extra large" id="extralarge" />
-                                </li>
-                                <li>
-                                    <label for="xxl">2X</label>
-                                    <input type="radio" name="shirt size - 2x" id="xxl" />
-                                </li>
-                                <li>
-                                    <label for="xxxl">3X</label>
-                                    <input type="radio" name="shirt size - 3x" id="xxxl" />
-                                </li>
-                                <li>
-                                    <label for="xxxxl">4X</label>
-                                    <input type="radio" name="shirt size - 4x" id="xxxxl" />
-                                </li>
-                                <li>
-                                    <label for="xxxxxl">5X</label>
-                                    <input type="radio" name="shirt size - 5x" id="xxxxxl" />
-                                </li>
-
-                            </ul> -->
-                            </li>
-                            <li>
-                                <p>Quantity:</p>
-                                <label for="quantity"></label>
-                                <input type="number" id="quantity" name="quantity" min="1" max="20">
-                            </li>
-                            <li>
-                                <a id="add_button" href="https://www.orbit-watches.com">              
-                                        <button class="addtocart"><strong>Add To Cart</strong></button>     
-                                </a>    
-                            </li>
+                            </ul>
+                        </li>                      
                     </ul>
                 </li>
             </ul>
@@ -145,5 +158,7 @@
     </main>
     <script src="../script.js"></script>
 </body>
+
+
 
 </html>
